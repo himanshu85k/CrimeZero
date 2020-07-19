@@ -1,0 +1,57 @@
+body {
+  background-color: #ddd;
+  font-family: 'Sora', sans-serif;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen {
+  width: 260px;
+  justify-content: left;
+  border-radius: 22px;
+  padding: 0px 20px;
+  margin-top: 66px;
+  margin-bottom: 33px;
+  box-shadow: inset 3px 3px 9px #b0b0b0, inset -3px -3px 9px #fcfcfc;
+}
+
+.screen p {
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.keypad-button {
+  width: 55px;
+  margin: 10px;
+  border-radius: 22px;
+  padding: 10px;
+  box-shadow: 3px 3px 9px #b0b0b0, -3px -3px 9px #fcfcfc;
+}
+
+.keypad-button:active {
+  background: linear-gradient(0.9turn, #fcfcfcaa, #b0b0b0aa);
+  box-shadow: 0px 0px 0px #b0b0b0, 0px 0px 0px #fcfcfc;
+}
+
+.cursor {
+  animation: blinker 0.8s cubic-bezier(0.8, 0, 0.99, 0.39) infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
